@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "count": 500,
+      "name": "kobieta",
+      "display": "Kobieta",
+      "display_en": "Woman"
+    },
+    {
+      "count": 1000,
+      "name": "milosc",
+      "display": "Mi\u0142o\u015b\u0107",
+      "display_en": "Love"
+    },
+    {
+      "count": 1500,
+      "name": "smierc",
+      "display": "\u015amier\u0107",
+      "display_en": "Death"
+    }
+  ],
+  "links": [
+    {
+      "count": 400,
+      "source": 1,
+      "strength": 5.5563465441023085,
+      "target": 2
+    },
+    {
+      "count": 400,
+      "source": 0,
+      "strength": 1.200,
+      "target": 1
+    }
+  ]
+}

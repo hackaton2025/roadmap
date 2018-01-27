@@ -1,18 +1,46 @@
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
 
-    .links line {
-        stroke: #999;
-        stroke-opacity: 0.6;
+    svg {
+        font: 10px sans-serif;
     }
 
-    .nodes circle {
-        stroke: #fff;
-        stroke-width: 1.5px;
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .rect {
+        fill: #333;
+    }
+
+    .rect--negative {
+        fill: brown;
+    }
+
+    .label {
+        fill: white;
+        font-size: 12px;
+        text-anchor: end;
+    }
+
+    .label-change {
+        font-weight: bold;
+    }
+
+    .label-value {
+        fill-opacity: 0.8;
+    }
+
+    .label--negative {
+        text-anchor: start;
     }
 
 </style>
-<svg width="960" height="600"></svg>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script> </s
+<svg width="960" height="500"></svg>
+<script src="//d3js.org/d3.v4.0.0-alpha.9.min.js"></script>
+<script src="test2.js"></script>
