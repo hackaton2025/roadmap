@@ -1,0 +1,140 @@
+{
+  "name":"IU4",
+  "skills":[
+    {
+      "name":"Skill1",
+      "description":"About skill1",
+      "id":0,
+      "prev_connection":[]
+    },
+    {
+      "name":"Skill2",
+      "description":"About skill2",
+      "id":1,
+      "prev_connection":[]
+    },
+    {
+      "name":"Skill3",
+      "description":"About skill3",
+      "id":2,
+      "prev_connection":[0,1]
+    }
+  ],
+  "courses":[
+    {
+      "name":"Course1",
+      "description":"About course1",
+      "id":0,
+      "modules":[
+        {
+          "time":10,
+          "skills":[
+            {
+              "id":0,
+              "exp":3,
+              "reqv":"If then"
+            },
+            {
+              "id":1,
+              "exp":3,
+              "reqv":"If then"
+            }
+          ]
+        },
+        {
+          "time":10,
+          "skills":[
+            {
+              "id":0,
+              "exp":3,
+              "reqv":"If then"
+            },
+            {
+              "id":1,
+              "exp":3,
+              "reqv":"If then"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Course2",
+      "description":"About course2",
+      "id":1,
+      "modules":[
+        {
+          "time":10,
+          "skills":[
+            {
+              "id":1,
+              "exp":3,
+              "reqv":"If then"
+            },
+            {
+              "id":2,
+              "exp":3,
+              "reqv":"If then"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Course3",
+      "description":"About course3",
+      "id":2,
+      "modules":[
+        {
+          "time":10,
+          "skills":[
+            {
+              "id":0,
+              "exp":3,
+              "reqv":"If then"
+            },
+            {
+              "id":2,
+              "exp":3,
+              "reqv":"If then"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "depatrments":[
+    {
+      "courses":[
+        {
+          "id":0,
+          "semester":1
+        },
+        {
+          "id":1,
+          "semester":1
+        }
+      ],
+      "name":"depatrment1",
+      "description":"About depatrment1"
+    },
+    {
+      "courses":[
+        {
+          "id":0,
+          "semester":1
+        },
+        {
+          "id":1,
+          "semester":1
+        },
+        {
+          "id":2,
+          "semester":2
+        }
+      ],
+      "name":"depatrment2",
+      "description":"About depatrment2"
+    }
+  ]
+}

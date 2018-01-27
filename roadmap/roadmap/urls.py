@@ -16,6 +16,8 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from . import views
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -24,7 +26,6 @@ urlpatterns = [
     # карта траекторий
     url(r'^(?P<course_id>[0-9]+)/graph/', views.graph, name="graph"),
     # ввод данных
-    url(r'^create/skill', views.skill, name="create"),
-    url(r'^create/course', views.course, name="create"),
+    url(r'^create/', views.skill, name="create"),
     url(r'^/', views.index, name="index"),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
