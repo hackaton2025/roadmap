@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Matrix of {{ specialty.name }}{% endblock %}
+
+{% block content %}
+<h1>Матрица курса {{ specialty.name }}</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+        {% for course in specialty.courses %}
+            <th scope="col">course</th>
+        {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for skill in specialty.skills %}
+        <tr>
+            <th scope="row">{{ skill.name }}</th>
+            {% for exp in skill.links %}
+                {% if exp > 0 %}
+                    <td>{{ exp }}</td>
+                {% else %}
+                    <td> </td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
