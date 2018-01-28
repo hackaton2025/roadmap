@@ -28,5 +28,6 @@ urlpatterns = [
     url(r'^graph/', views.graph_rest, name="graph"),
     # ввод данных
     url(r'^create/', views.create, name="create"),
+    url(r'^graph_dis/', views.dis, name="dis"),
     url(r'^$', views.index, name="index"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

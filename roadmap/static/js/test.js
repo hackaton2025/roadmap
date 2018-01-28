@@ -32,7 +32,7 @@ d3.json("/graph", function(error, graph) {
         .enter().append("circle")
         .attr("class", "node_circle")
         .attr("r", function(d) { return 0.5 * Math.sqrt(d.count); })
-        .style("fill", "skyblue" )
+        .style("fill", function(d) { return d.color; } )
         .on("mouseover", function(d) { mouseover_node(d); })
         .on("mouseout", function(d) { mouseout_node(d) })
         //.on("dblclick", function(d){ window.location.href=('http://wolnelektury.pl/katalog/motyw/' + d.name + '/') })
