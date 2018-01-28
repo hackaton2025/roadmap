@@ -1,7 +1,7 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext, loader
 from django.shortcuts import get_object_or_404, render
-from django.core.urlresolvers import reverse
+#from django.core.urlresolvers import reverse
 from pymongo import MongoClient
 from django.shortcuts import redirect
 import json
@@ -17,7 +17,7 @@ def create(request):
     if request.method == 'POST':
         data = json.loads(request.POST['data'])
         print(data)
-        #db.specialties.insert_one(data)
+        db.specialties.insert_one(data)
         n = db.specialties.count()
         return redirect("/{}/matrix".format(n))
         #
@@ -74,7 +74,7 @@ def graph_rest(request):
 
 # GET
 def matrix(request, specialty_id):
-    data = db.specialties.find().skip(int(specialty_id)+1)
+    data = db.specialties.find().skip(int(specialty_id)-1)
     data = data[0]
     for idx in range(len(data["skills"])):
         data["skills"][idx]["links"] = [0 for i in range(len(data["courses"]))]
