@@ -11,7 +11,7 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("motywy_wolnych_lektur.json", function(error, graph) {
+d3.json("/graph", function(error, graph) {
 
     var main = svg.append("g")
         .attr("class", "graph");

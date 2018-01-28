@@ -22,10 +22,11 @@ from django.conf import settings
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # матрица компетенции
-    url(r'^(?P<course_id>[0-9]+)/matrix/', views.matrix, name="matrix"),
+    url(r'^(?P<specialty_id>[0-9]+)/matrix/', views.matrix, name="matrix"),
     # карта траекторий
-    url(r'^(?P<course_id>[0-9]+)/graph/', views.graph, name="graph"),
+    url(r'^(?P<specialty_id>[0-9]+)/graph/', views.graph, name="graph"),
+    url(r'^graph/', views.graph_rest, name="graph"),
     # ввод данных
-    url(r'^create/', views.skill, name="create"),
-    url(r'^/', views.index, name="index"),
+    url(r'^create/', views.create, name="create"),
+    url(r'^$', views.index, name="index"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

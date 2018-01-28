@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Create speciality{% endblock %}
+
+{% block content %}
+<h1>Create speciality</h1>
+<br>
+<div class="container">
+    <form action="/create/" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Input data</label>
+            <textarea class="form-control" id="data" name="data" rows="7"></textarea>
+        </div>
+        <button class="btn" type="submit">Search</button>
+    </form>
+</div>
+
+{% endblock %}

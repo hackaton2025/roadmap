@@ -2,65 +2,70 @@
   "name":"IU4",
   "skills":[
     {
-      "name":"Skill1",
-      "description":"About skill1",
-      "id":0,
-      "prev_connection":[]
-    },
-    {
-      "name":"Skill2",
-      "description":"About skill2",
+      "name":"Пространственное мышление",
+      "description":"",
       "id":1,
       "prev_connection":[]
     },
     {
-      "name":"Skill3",
-      "description":"About skill3",
+      "name":"Технический рисунок",
+      "description":"",
       "id":2,
-      "prev_connection":[0,1]
+      "prev_connection":[]
+    },
+    {
+      "name":"ГОСТ",
+      "description":"About skill3",
+      "id":3,
+      "prev_connection":[]
+    },
+    {
+      "name":"Среда 3D моделирорвания",
+      "description":"",
+      "id":4,
+      "prev_connection":[]
+    },
+    {
+      "name":"Материалы и свойства",
+      "description":"",
+      "id":5,
+      "prev_connection":[]
+    },
+    {
+      "name":"Детали машин",
+      "description":"",
+      "id":6,
+      "prev_connection":[]
+    },
+    {
+      "name":"Измерение геометрических велечин",
+      "description":"",
+      "id":7,
+      "prev_connection":[]
+    },
+    {
+      "name":"Технологии металлобработки",
+      "description":"",
+      "id":8,
+      "prev_connection":[]
+    },
+    {
+      "name":"Планировка цехов",
+      "description":"",
+      "id":9,
+      "prev_connection":[]
+    },
+    {
+      "name":"Конструирование приборов",
+      "description":"",
+      "id":10,
+      "prev_connection":[]
     }
   ],
   "courses":[
     {
-      "name":"Course1",
-      "description":"About course1",
-      "id":0,
-      "modules":[
-        {
-          "time":10,
-          "skills":[
-            {
-              "id":0,
-              "exp":3,
-              "reqv":"If then"
-            },
-            {
-              "id":1,
-              "exp":3,
-              "reqv":"If then"
-            }
-          ]
-        },
-        {
-          "time":10,
-          "skills":[
-            {
-              "id":0,
-              "exp":3,
-              "reqv":"If then"
-            },
-            {
-              "id":1,
-              "exp":3,
-              "reqv":"If then"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name":"Course2",
-      "description":"About course2",
+      "name":"Начертательная геометрия",
+      "description":"Начертательная геометрия",
       "id":1,
       "modules":[
         {
@@ -68,7 +73,7 @@
           "skills":[
             {
               "id":1,
-              "exp":3,
+              "exp":5,
               "reqv":"If then"
             },
             {
@@ -81,21 +86,223 @@
       ]
     },
     {
-      "name":"Course3",
-      "description":"About course3",
+      "name":"Инженерная графика 1",
+      "description":"Инженерная графика 1",
       "id":2,
       "modules":[
         {
           "time":10,
           "skills":[
             {
-              "id":0,
-              "exp":3,
+              "id":1,
+              "exp":5,
+              "reqv":"If then"
+            },
+            {
+              "id":2,
+              "exp":5,
+              "reqv":"If then"
+            },
+            {
+              "id":3,
+              "exp":2,
+              "reqv":"If then"
+            },
+            {
+              "id":6,
+              "exp":2,
+              "reqv":"If then"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Инженерная графика 2",
+      "description":"Инженерная графика 2",
+      "id":3,
+      "modules":[
+        {
+          "time":10,
+          "skills":[
+            {
+              "id":1,
+              "exp":5,
+              "reqv":"If then"
+            },
+            {
+              "id":3,
+              "exp":1,
+              "reqv":"If then"
+            },
+            {
+              "id":4,
+              "exp":5,
+              "reqv":"If then"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Материаловедение",
+      "description":"Материаловедение",
+      "id":4,
+      "modules":[
+        {
+          "time":10,
+          "skills":[
+            {
+              "id":3,
+              "exp":1,
+              "reqv":"If then"
+            },
+            {
+              "id":5,
+              "exp":5,
+              "reqv":"If then"
+            },
+            {
+              "id":8,
+              "exp":2,
+              "reqv":"If then"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Основы конструирования приборов",
+      "description":"Основы конструирования приборов",
+      "id":5,
+      "modules":[
+        {
+          "time":10,
+          "skills":[
+            {
+              "id":1,
+              "exp":2,
               "reqv":"If then"
             },
             {
               "id":2,
               "exp":3,
+              "reqv":"If then"
+            },
+            {
+              "id":3,
+              "exp":5,
+              "reqv":"If then"
+            },
+            {
+              "id":4,
+              "exp":2,
+              "reqv":"If then"
+            },
+            {
+              "id":5,
+              "exp":3,
+              "reqv":"If then"
+            },
+            {
+              "id":6,
+              "exp":5,
+              "reqv":"If then"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Метрология",
+      "description":"Метрология",
+      "id":6,
+      "modules":[
+        {
+          "time":10,
+          "skills":[
+            {
+              "id":3,
+              "exp":1,
+              "reqv":"If then"
+            },
+            {
+              "id":7,
+              "exp":5,
+              "reqv":"If then"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Технологическая подготовка производства",
+      "description":"Технологическая подготовка производства",
+      "id":7,
+      "modules":[
+        {
+          "time":10,
+          "skills":[
+            {
+              "id":3,
+              "exp":2,
+              "reqv":"If then"
+            },
+            {
+              "id":8,
+              "exp":5,
+              "reqv":"If then"
+            },
+            {
+              "id":9,
+              "exp":5,
+              "reqv":"If then"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Основы конструирования приборов курсовая работа",
+      "description":"Основы конструирования приборов курсовая работа",
+      "id":8,
+      "modules":[
+        {
+          "time":10,
+          "skills":[
+            {
+              "id":1,
+              "exp":1,
+              "reqv":"If then"
+            },
+            {
+              "id":3,
+              "exp":5,
+              "reqv":"If then"
+            },
+            {
+              "id":4,
+              "exp":1,
+              "reqv":"If then"
+            },
+            {
+              "id":5,
+              "exp":2,
+              "reqv":"If then"
+            },
+            {
+              "id":6,
+              "exp":2,
+              "reqv":"If then"
+            },
+            {
+              "id":7,
+              "exp":1,
+              "reqv":"If then"
+            },
+            {
+              "id":10,
+              "exp":5,
               "reqv":"If then"
             }
           ]
@@ -107,11 +314,11 @@
     {
       "courses":[
         {
-          "id":0,
+          "id":1,
           "semester":1
         },
         {
-          "id":1,
+          "id":2,
           "semester":1
         }
       ],
@@ -121,16 +328,28 @@
     {
       "courses":[
         {
-          "id":0,
-          "semester":1
-        },
-        {
-          "id":1,
-          "semester":1
-        },
-        {
-          "id":2,
+          "id":3,
           "semester":2
+        },
+        {
+          "id":4,
+          "semester":4
+        },
+        {
+          "id":5,
+          "semester":4
+        },
+        {
+          "id":6,
+          "semester":4
+        },
+        {
+          "id":7,
+          "semester":4
+        },
+        {
+          "id":8,
+          "semester":5
         }
       ],
       "name":"depatrment2",
